@@ -25,4 +25,10 @@ public class Property {
 
     @Value("${tableColumnLength}" )
       public int tableColumnLength;
+
+    @Value("${delimiter:\"}" )
+    public Character columnDelimiter;
+
+    @Value("${lineSeparator:\\r\\n}")
+    public String lineSeparator;
 }

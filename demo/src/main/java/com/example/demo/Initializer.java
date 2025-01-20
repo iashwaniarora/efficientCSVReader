@@ -3,6 +3,7 @@ package com.example.demo;
 import com.example.demo.csv.properties.Property;
 import com.example.demo.csv.service.CSVReader;
 
+import com.example.demo.csv.service.CSVReaderUnivocity;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -11,7 +12,7 @@ import org.springframework.stereotype.Component;
 public class Initializer {
 
     @Autowired
-    CSVReader csvReader;
+    CSVReaderUnivocity csvReader;
 
 
     @Autowired
